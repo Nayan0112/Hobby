@@ -46,9 +46,12 @@ class Editor:
             return
 
         if name in users and course in users[name]:
-            users[name][course] = int(grade)  
-            self.student_db.save_data(self.student_db.student_data, users)
-            print("Grade updated successfully!")
+            if grade >= 0 and grade <=10 :
+                users[name][course] = int(grade) 
+                self.student_db.save_data(self.student_db.student_data, users)
+                print("Grade updated successfully!")
+            else :
+                print("Action unsuccesful!")
         else:
             print("Student or course not found!")
 
