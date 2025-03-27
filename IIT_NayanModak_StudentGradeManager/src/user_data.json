@@ -1,0 +1,26 @@
+{
+    "nayan": {
+        "password": "123",
+        "role": "teacher"
+    },
+    "nimish": {
+        "password": "123",
+        "role": "student"
+    },
+    "rishit": {
+        "password": "123",
+        "role": "student"
+    },
+    "aric": {
+        "password": "123",
+        "role": "teacher"
+    },
+    "shit": {
+        "password": "123",
+        "role": "student"
+    },
+    "duck": {
+        "password": "123",
+        "role": "student"
+    }
+}
