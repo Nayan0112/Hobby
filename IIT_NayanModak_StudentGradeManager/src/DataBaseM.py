@@ -12,7 +12,7 @@ class DataBase:
         try:
             with open(self.user_file, "r") as file:
                 return json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (FileNotFoundError):
             return {}
 
     def save_users(self, users):
@@ -32,7 +32,7 @@ class DataBase:
         try:
             with open(data_file, "r") as file:
                 return json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except (FileNotFoundError):
             return {}
 
     def save_data(self, data_file, data):

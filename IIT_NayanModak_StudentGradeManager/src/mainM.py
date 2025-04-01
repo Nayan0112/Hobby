@@ -1,6 +1,8 @@
 from DataBaseM import TeacherDB, StudentDB
 from CreditManagerM import Editor
 
+#main
+
 def main():
     student_db = StudentDB()
     teacher_db = TeacherDB()
@@ -64,11 +66,18 @@ def main():
                         students = student_db.load_data(student_db.student_data)
                         course_name = input("Enter the course name: ")
                         print("List of available courses if the course is not available :")
-                        if course_name not in student_db.available_courses():
-                            print(f"Could not add course {course_name}.")
-                        else :
-                            edit.add_course(username, course_name, role)
 
+                        for student, courses in students.items():
+                            if student == username:
+                                if course_name in courses:
+                                    student_db.available_courses()
+                                    edit.remove_course(username, course_name, role)
+                                    break
+                                elif course_name in student_db.available_courses():
+                                    edit.add_course(username, course_name, role)
+                                    break
+
+                            
                     elif usr_choice == "5":
                         print("Logging out....")
                         break
