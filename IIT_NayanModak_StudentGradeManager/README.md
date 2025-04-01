@@ -77,5 +77,13 @@ STUDENT GRADE MANAGER :
             NOTES from google classoom for file management in JSON
             NOTES from our prof for inheritance and basic code structures
 
+
+LEARNINGS:
+    -> OOPs first full program
+    -> Modulrising the code
+    -> JSON files (Love it!)
+    -> nested dictionaries and its usages
+    -> DEBUGING (mostly with adding and removing courses, somehow student == username was't working)
+
 THANK YOU :) !
 
