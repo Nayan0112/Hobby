@@ -70,10 +70,12 @@ STUDENT GRADE MANAGER :
             -> SQL based database
             -> Hashing of passwords
             -> GUI :(
-                
+
         etc...
 
         ref : 
             NOTES from google classoom for file management in JSON
             NOTES from our prof for inheritance and basic code structures
+
+THANK YOU :) !
 
