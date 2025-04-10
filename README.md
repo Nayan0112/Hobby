@@ -1,1 +1,1 @@
-A basic student grade manager project :|
+Contains all random bs :)
